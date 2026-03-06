@@ -28,6 +28,27 @@
   <link rel="icon" href="/images/cropped-cropped-cleeman.favicon-32x32.png" sizes="32x32">
   <link rel="stylesheet" href="/css/output.css">
 
+  <!-- JSON-LD BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Αρχική",
+        "item": "https://cleeman.gr/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Καθαρισμοί Κτιρίων Πειραιάς"
+      }
+    ]
+  }
+  </script>
+
   <!-- JSON-LD LocalBusiness Schema -->
   <script type="application/ld+json">
   {
@@ -39,6 +60,7 @@
     "url": "https://cleeman.gr",
     "telephone": "+306975625941",
     "image": "https://cleeman.gr/images/cleeman.logo_-1.png",
+    "logo": "https://cleeman.gr/images/cleeman.logo_-1.png",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Πειραιάς",
@@ -51,28 +73,27 @@
       "longitude": 23.6430
     },
     "areaServed": [
-      {
-        "@type": "City",
-        "name": "Πειραιάς"
-      },
-      {
-        "@type": "City",
-        "name": "Αθήνα"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Αττική"
-      }
+      { "@type": "City", "name": "Πειραιάς" },
+      { "@type": "City", "name": "Νίκαια" },
+      { "@type": "City", "name": "Κερατσίνι" },
+      { "@type": "City", "name": "Κορυδαλλός" },
+      { "@type": "City", "name": "Δραπετσώνα" },
+      { "@type": "City", "name": "Μοσχάτο" },
+      { "@type": "City", "name": "Αθήνα" },
+      { "@type": "AdministrativeArea", "name": "Αττική" }
     ],
-    "serviceType": [
-      "Καθαρισμοί Κτιρίων",
-      "Καθαρισμοί Δημοσίων Χώρων",
-      "Καθαρισμοί Πολυκατοικιών",
-      "Συντηρήσεις Ασανσέρ",
-      "Απολυμάνσεις Χώρων",
-      "Φυλάξεις Χώρων",
-      "Βαφές Κτιρίων"
-    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Υπηρεσίες Καθαρισμού & Συντήρησης",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Καθαρισμοί Κτιρίων & Πολυκατοικιών" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Καθαρισμοί Επαγγελματικών Χώρων & Γραφείων" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Απολυμάνσεις Χώρων" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Συντηρήσεις Ασανσέρ" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Φυλάξεις Χώρων & Προσώπων" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Βαφές Σπιτιών & Κτιρίων" } }
+      ]
+    },
     "foundingDate": "2000",
     "priceRange": "€€",
     "openingHoursSpecification": {
@@ -194,7 +215,7 @@
         <a href="#services" class="px-3 py-2 text-sm font-medium hover:bg-gray-800 hover:text-white transition-colors rounded">ΑΠΟΛΥΜΑΝΣΕΙΣ ΧΩΡΩΝ</a>
         <a href="#services" class="px-3 py-2 text-sm font-medium hover:bg-gray-800 hover:text-white transition-colors rounded">ΦΥΛΑΞΕΙΣ</a>
         <a href="#services" class="px-3 py-2 text-sm font-medium hover:bg-gray-800 hover:text-white transition-colors rounded">ΚΑΘΑΡΙΣΜΟΣ ΝΟΣΟΚΟΜΕΙΩΝ / ΕΜΠΟΡΙΚΩΝ ΚΑΤΑΣΤΗΜΑΤΩΝ</a>
-        <a href="#services" class="px-3 py-2 text-sm font-medium hover:bg-gray-800 hover:text-white transition-colors rounded">ΒΑΦΕΣ ΣΠΙΤΙΩΝ / ΚΤΙΤΡΙΩΝ</a>
+        <a href="#services" class="px-3 py-2 text-sm font-medium hover:bg-gray-800 hover:text-white transition-colors rounded">ΒΑΦΕΣ ΣΠΙΤΙΩΝ / ΚΤΙΡΙΩΝ</a>
       </nav>
 
       <a href="tel:6975625941" class="hidden lg:inline-block bg-red-600 text-white px-5 py-2 text-sm font-medium rounded hover:bg-red-700 transition-colors">ΠΡΟΣΦΟΡΑ</a>
@@ -208,7 +229,7 @@
         <a href="#services" class="py-2 text-sm font-medium border-b border-gray-100">ΑΠΟΛΥΜΑΝΣΕΙΣ ΧΩΡΩΝ</a>
         <a href="#services" class="py-2 text-sm font-medium border-b border-gray-100">ΦΥΛΑΞΕΙΣ</a>
         <a href="#services" class="py-2 text-sm font-medium border-b border-gray-100">ΚΑΘΑΡΙΣΜΟΣ ΝΟΣΟΚΟΜΕΙΩΝ / ΕΜΠΟΡΙΚΩΝ ΚΑΤΑΣΤΗΜΑΤΩΝ</a>
-        <a href="#services" class="py-2 text-sm font-medium border-b border-gray-100">ΒΑΦΕΣ ΣΠΙΤΙΩΝ / ΚΤΙΤΡΙΩΝ</a>
+        <a href="#services" class="py-2 text-sm font-medium border-b border-gray-100">ΒΑΦΕΣ ΣΠΙΤΙΩΝ / ΚΤΙΡΙΩΝ</a>
         <a href="tel:6975625941" class="mt-2 mb-2 bg-red-600 text-white px-5 py-2 text-sm font-medium rounded text-center hover:bg-red-700 transition-colors">ΠΡΟΣΦΟΡΑ</a>
       </div>
     </nav>
@@ -227,7 +248,7 @@
         <a href="#services" class="text-sm hover:text-gray-300">ΑΠΟΛΥΜΑΝΣΕΙΣ ΧΩΡΩΝ</a>
         <a href="#services" class="text-sm hover:text-gray-300">ΦΥΛΑΞΕΙΣ</a>
         <a href="#services" class="text-sm hover:text-gray-300">ΚΑΘΑΡΙΣΜΟΣ ΝΟΣΟΚΟΜΕΙΩΝ / ΕΜΠΟΡΙΚΩΝ ΚΑΤΑΣΤΗΜΑΤΩΝ</a>
-        <a href="#services" class="text-sm hover:text-gray-300">ΒΑΦΕΣ ΣΠΙΤΙΩΝ / ΚΤΙΤΡΙΩΝ</a>
+        <a href="#services" class="text-sm hover:text-gray-300">ΒΑΦΕΣ ΣΠΙΤΙΩΝ / ΚΤΙΡΙΩΝ</a>
       </nav>
       <!-- NAP Block for Local SEO -->
       <div class="text-center text-sm text-gray-400 space-y-1 mb-4">
